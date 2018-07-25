@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.myapplication.Register"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用者註冊"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:id="@+id/Reg_Name"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Reg_NameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Reg_Name"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="信箱"
+            android:id="@+id/Reg_Email"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/Reg_Name"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Reg_EmailEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Reg_Email"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號"
+            android:id="@+id/Reg_Acc"
+            android:layout_below="@+id/Reg_Email"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Reg_AccEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Reg_Acc"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼"
+            android:id="@+id/Reg_Pas"
+            android:layout_below="@+id/Reg_Acc"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Reg_PasEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Reg_Pas"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Reg_ConfirmBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="確  認"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

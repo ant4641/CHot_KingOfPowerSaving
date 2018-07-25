@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_rasp"
+        icon="@drawable/ic_action_rasp"
+        title="Rasp" />
+    <tab
+        id="@+id/tab_ard"
+        icon="@drawable/ic_action_ard"
+        title="Arduino" />
+    <tab
+        id="@+id/tab_soc"
+        icon="@drawable/ic_action_soc"
+        title="Socket" />
+    <tab
+        id="@+id/tab_dev"
+        icon="@drawable/ic_action_dev"
+        title="Device" />
+    <tab
+        id="@+id/tab_eca"
+        icon="@drawable/ic_action_eca"
+        title="ECA" />
+</tabs>

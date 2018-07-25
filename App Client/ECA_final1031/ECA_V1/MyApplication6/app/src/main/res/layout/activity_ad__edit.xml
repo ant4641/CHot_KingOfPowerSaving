@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.owner.myapplication.RP_Edit"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ARDUINO > 編輯ARDUINO"
+        android:textSize="20sp"
+        android:background="#dedcd2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="序號"
+            android:id="@+id/AD_Edit_Ser"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/AD_Edit_SerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/AD_Edit_Ser"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名稱"
+            android:id="@+id/AD_Edit_Name"
+            android:singleLine="true"
+            android:layout_below="@+id/AD_Edit_Ser"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:id="@+id/AD_Edit_NameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/AD_Edit_Name"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="檢測類型"
+            android:id="@+id/AD_Edit_Type"
+            android:singleLine="true"
+            android:layout_below="@+id/AD_Edit_Name"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/AD_text_Typetext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/AD_Edit_Type"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="連線狀態"
+            android:id="@+id/AD_Edit_Status"
+            android:singleLine="true"
+            android:layout_below="@+id/AD_Edit_Name"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="位置"
+            android:id="@+id/AD_Edit_Loc"
+            android:layout_below="@+id/AD_Edit_Name"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/AD_Edit_LocEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/AD_Edit_Loc"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="檢測值"
+            android:id="@+id/AD_Edit_Det"
+            android:singleLine="true"
+            android:layout_below="@+id/RP_Edit_Loc"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="對應樹梅派"
+            android:id="@+id/AD_Edit_RaspSerial"
+            android:singleLine="true"
+            android:layout_below="@+id/RP_Edit_Loc"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/AD_Edit_RaspSerialText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/AD_Edit_RaspSerial"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/AD_Edit_ConfirmBtn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="確  認"
+            android:textSize="20sp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBarAE"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            app:bb_tabXmlResource="@xml/bottombar"
+            app:bb_behavior="shifting"
+            app:bb_inActiveTabAlpha="0.3"
+            app:bb_inActiveTabColor="@color/colorAccent"
+            app:bb_activeTabColor="@color/colorAccent"
+            app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+            app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            app:bb_tabXmlResource="@xml/bottombar"
+            app:bb_behavior="shifting"
+            app:bb_inActiveTabAlpha="0.3"
+            app:bb_inActiveTabColor="@color/colorAccent"
+            app:bb_activeTabColor="@color/colorAccent"
+            app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+            app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+    </FrameLayout>
+
+</LinearLayout>

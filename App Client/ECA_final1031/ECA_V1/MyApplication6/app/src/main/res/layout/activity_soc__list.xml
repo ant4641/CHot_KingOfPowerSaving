@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.owner.myapplication.SOC_List"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/SOC_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="插座"
+        android:background="#dedcd2"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="440dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="28dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/items"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="5dp"
+                    android:text=" 序號                  名稱                     是否開啟            對應樹莓派        編輯列"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:layout_weight="0.04"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ListView
+                    android:id="@+id/lvone"
+                    android:layout_width="match_parent"
+                    android:layout_height="390dp"
+                    android:layout_marginRight="20dp"></ListView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBarSL"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            app:bb_tabXmlResource="@xml/bottombar"
+            app:bb_behavior="shifting"
+            app:bb_inActiveTabAlpha="0.3"
+            app:bb_inActiveTabColor="@color/colorAccent"
+            app:bb_activeTabColor="@color/colorAccent"
+            app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+            app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

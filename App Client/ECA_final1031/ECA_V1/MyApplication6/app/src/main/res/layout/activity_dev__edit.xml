@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.owner.myapplication.DEV_Edit"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="設備 > 編輯設備"
+        android:textSize="20sp"
+        android:background="#dedcd2"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="序號"
+            android:id="@+id/DEV_Edit_Ser"
+            android:singleLine="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/DEV_Edit_SerText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/DEV_Edit_Ser"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名稱"
+            android:id="@+id/DEV_Edit_Name"
+            android:singleLine="true"
+            android:layout_below="@+id/DEV_Edit_Ser"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <EditText
+            android:id="@+id/DEV_Edit_NameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/DEV_Edit_Name"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="對應插座"
+            android:id="@+id/DEV_Edit_SocSerial"
+            android:singleLine="true"
+            android:layout_below="@+id/DEV_Edit_Name"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+        <TextView
+            android:id="@+id/DEV_Edit_SocSerialText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/DEV_Edit_SocSerial"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/DEV_Edit_ConfirmBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="確  認"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/DEV_Edit_CancelBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="刪  除"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+        <com.roughike.bottombar.BottomBar
+            android:id="@+id/bottomBarDE"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#FFFFFF"
+            android:layout_gravity="bottom"
+            app:bb_tabXmlResource="@xml/bottombar"
+            app:bb_behavior="shifting"
+            app:bb_inActiveTabAlpha="0.3"
+            app:bb_inActiveTabColor="@color/colorAccent"
+            app:bb_activeTabColor="@color/colorAccent"
+            app:bb_titleTypeFace="fonts/GreatVibes-Regular.otf"
+            app:bb_titleTextAppearance="@style/CustomTitleTextAppearance"/>
+    </FrameLayout>
+
+</LinearLayout>

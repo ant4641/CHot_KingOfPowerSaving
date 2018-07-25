@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/list_ser"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="220dp"
+                android:text="test1"
+                android:textSize="20sp"
+                android:layout_marginTop="60dp"
+                android:layout_toRightOf="@+id/items"
+                />
+
+            <TextView
+                android:id="@+id/list_name"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="220dp"
+                android:text="test2"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/list_loc"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="220dp"
+                android:text="test3"
+                android:textSize="20sp" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/list_isuse"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="60dp"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="test4"-->
+            <!--android:textSize="20sp" />-->
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="編輯"
+                android:textSize="20sp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"/>
+
+            <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="fill_parent"-->
+            <!--android:text="選擇" />-->
+
+        </LinearLayout>
+
+    </TableRow>
+</TableLayout>

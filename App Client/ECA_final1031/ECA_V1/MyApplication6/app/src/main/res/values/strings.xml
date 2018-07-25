@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CHot節電霸</string>
+    <string name="app_nametest">CHot節電霸</string>
+    <string name="title_activity_user">User</string>
+    <string name="tab_Rasp_title">Rasp</string>
+    <string name="tab_ARD_title">ARD</string>
+    <string name="tab_SOC_title">SOC</string>
+    <string name="tab_DEV_title">Device</string>
+    <string name="tab_ECA_title">ECA</string>
+    <string name="UserInfo">使用者資料</string>
+    <string name="Explain">說明</string>
+    <string name="LogOut">登出</string>
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.owner.myapplication.Login"
+    android:orientation="vertical">
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用者登入"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"/>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帳號"
+            android:id="@+id/Login_Acc"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Login_AccEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Login_Acc"
+            android:textSize="20sp"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:text="hytw"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密碼"
+            android:id="@+id/Login_Pas"
+            android:layout_below="@+id/Login_Acc"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            />
+
+        <EditText
+            android:id="@+id/Login_PasEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Login_AccEdit"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="70dp"
+            android:text="1234"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Login_LoginBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="登  入"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <!--gravity to 內容，layout_gravity to 外框-->
+    <Button
+        android:id="@+id/Login_ForBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="忘記密碼"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/Login_RegBtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="註  冊"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
